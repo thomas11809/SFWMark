@@ -1,0 +1,18 @@
+# Python bytecode
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Directories
+docs/index.html
+src/text_dataset/
+outputs/
+
+# Python files
+z/
+# l1.py
+# iccv2025_main.py
+# test.py
+
+# etc
+# requirements.txt
