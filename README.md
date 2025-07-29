@@ -1,14 +1,14 @@
 <div align="center">
 <h1>🧼 SFW: Symmetric Fourier Watermarking </h1>
-<h3>Semantic Watermarking Reinvented </h3>
-<!-- <h3>Semantic Watermarking Reinvented - ICCV 2025 </h3> -->
+<!-- <h3>Semantic Watermarking Reinvented </h3> -->
+<h3>Semantic Watermarking Reinvented - ICCV 2025 </h3>
 
 [Sung Ju Lee](https://github.com/thomas11809), &nbsp; 
 [Nam Ik Cho](https://scholar.google.co.kr/citations?user=Ntx5VRIAAAAJ&hl=ko&oi=ao)
 
 <!-- Department of ECE,&nbsp; 
 INMC,&nbsp;  -->
-Seoul National University
+Seoul National University, South Korea
 
 [![Project Page](https://img.shields.io/badge/Project-Page-blue)]() &nbsp; 
 <!-- [![arXiv](https://img.shields.io/badge/arXiv-0000.0000-b31b1b.svg)]() -->
@@ -28,7 +28,7 @@ Seoul National University
 
 This repository contains the official PyTorch implementation of the paper:  
 _**"Semantic Watermarking Reinvented: Enhancing Robustness and Generation Quality with Fourier Integrity"**_  
-<!-- ([📄Accepted at ICCV 2025]()). -->
+([📄Accepted at ICCV 2025]()).
 
 ## 🧭 Overview
 <p align="left"><img src="docs/static/images/fig_trade-off.png" width="600"></p>

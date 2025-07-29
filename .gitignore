@@ -4,7 +4,7 @@
 *$py.class
 
 # Directories
-docs/index.html
+docs/static/png
 src/text_dataset/
 outputs/
 

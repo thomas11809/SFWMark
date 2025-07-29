@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Project page for Symmetric Fourier Watermarking (SFW), a novel semantic watermarking technique for latent diffusion models, combining Hermitian symmetry and center-aware design for robust and high-fidelity generation.">
+  <meta property="og:title" content="Symmetric Fourier Watermarking (SFW)" />
+  <meta property="og:description" content="A semantic watermarking method in the latent Fourier domain for AI-generated image." />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/SFW_logo.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="Symmetric Fourier Watermarking (SFW)">
+  <meta name="twitter:description" content="Official project page for Symmetric Fourier Watermarking (SFW).">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/SFW_logo.png">
+  <meta name="twitter:card" content="static/images/SFW_logo.png">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="semantic watermarking, AI-generated image, latent diffusion models, tree-ring, ringid, stable signature, zodiac, gaussian shading, Hermitian symmetry, center-aware design">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>SFW: Symmetric Fourier Watermarking</title>
+  <link rel="icon" type="image/x-icon" href="static/images/SFW_favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Semantic Watermarking Reinvented: Enhancing Robustness and
+              Generation Quality with Fourier Integrity</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://github.com/thomas11809" target="_blank">Sung Ju Lee</a>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.co.kr/citations?user=Ntx5VRIAAAAJ&hl=ko&oi=ao" target="_blank">Nam Ik
+                  Cho</a></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Seoul National University, South Korea<br>Accepted at ICCV 2025</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span> -->
+
+                <!-- Supplementary PDF link -->
+                <!-- <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span> -->
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/thomas11809/SFWMark" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+                <span class="link-block">
+                <a class="button is-normal is-rounded is-dark" disabled>
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv (Coming Soon)</span>
+                </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser image-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/fig_trade-off.png" alt="Teaser image" style="width: 100%; height: auto;" />
+        <h2 class="subtitle has-text-centered">
+          Summary of watermarking performance across different semantic watermarking methods, following the
+          merged-in-generation scheme with no additional processing time.
+          The proposed approaches achieve the best balance between detection robustness and image fidelity.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser image -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Semantic watermarking techniques for latent diffusion models (LDMs) are robust against regeneration
+              attacks, but often suffer from detection performance degradation due to the loss of frequency integrity.
+              To tackle this problem, we propose a novel embedding method called Hermitian Symmetric Fourier
+              Watermarking (SFW), which maintains frequency integrity by enforcing Hermitian symmetry.
+              Additionally, we introduce a center-aware embedding strategy that reduces the vulnerability of semantic
+              watermarking due to cropping attacks by ensuring robust information retention.
+              To validate our approach, we apply these techniques to existing semantic watermarking schemes, enhancing
+              their frequency-domain structures for better robustness and retrieval accuracy.
+              Extensive experiments demonstrate that our methods achieve state-of-the-art verification and
+              identification performance, surpassing previous approaches across various attack scenarios.
+              Ablation studies confirm the impact of SFW on detection capabilities, the effectiveness of the
+              center-aware embedding against cropping, and how message capacity influences identification accuracy.
+              Notably, our method achieves the highest detection accuracy while maintaining superior image fidelity, as
+              evidenced by FID and CLIP scores.
+              Conclusively, our proposed SFW is shown to be an effective framework for balancing robustness and image
+              fidelity, addressing the inherent trade-offs in semantic watermarking.
+              Code available at <a href="https://github.com/thomas11809/SFWMark" target="_blank"
+                style="color: #1e90ff;">github.com/thomas11809/SFWMark</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <section class="section hero is-small">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3">Motivation</h2>
+            <div class="level-set has-text-justified">
+              <div class="columns">
+                <!-- <div class="column is-two-thirds"> -->
+                <div class="column is-three-quarters">
+                  <p>
+                    The rise of latent diffusion models has made image generation widely accessible, but it also introduces challenges in content attribution and copyright. 
+                    Semantic watermarking in the latent space offers a robust solution, especially due to its resilience against <strong>regeneration attacks</strong>, which often break pixel-level watermarks.
+                    <br>However, existing methods often discard the imaginary part in the Fourier domain, breaking the <strong>frequency integrity</strong> required to maintain the statistical structure of latent noise. 
+                    In particular, this violates the Hermitian symmetry necessary for real-valued latent signals, leading to distorted frequency patterns that simultaneously weaken detection robustness and degrade generative quality.
+                    <br>To address this issue, we propose a new approach that preserves frequency integrity while enabling reliable and high-quality watermarking.
+                  </p>
+                </div>
+                <!-- <div class="column is-one-thirds"> -->
+                <div class="column is-one-quarter">
+                  <img src="static/images/fig_wm-fft-a.png" alt="Weight distance correlation" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+                  Missing imaginary patterns reveal frequency loss in baselines.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container  is-max-desktop">
+        <h2 class="title is-3">Our Approach</h2>
+        <div class="level-set has-text-justified">
+          <p>
+          We introduce three key techniques to overcome the limitations of existing semantic watermarking methods.
+          </p>
+          <img src="static/images/fig_concept-1.png" alt="Our Approach" 
+          class="blend-img-background center-image" style="margin-top: 1rem; margin-bottom: 1rem;" />
+          <ol>
+            <li>
+              <strong>Hermitian Symmetric Fourier Watermarking (SFW):</strong><br>
+              By enforcing Hermitian symmetry in the latent Fourier domain, our method preserves frequency integrity and fully utilizes both real and imaginary components. 
+              This leads to stronger detection performance without sacrificing image quality.<br>
+            </li>
+            <li>
+              <strong>Center-Aware Embedding Strategy:</strong><br>
+              We embed watermarks only in the central region of the latent space, which remains stable under spatial transformations. 
+              This design greatly improves robustness against cropping attacks.<br>
+            </li>
+            <li>
+              <strong>HSQR: Hermitian Symmetric QR Code:</strong><br>
+              We extend SFW to structured binary watermarks by splitting a QR code across the real and imaginary parts of the Fourier domain. 
+              This approach ensures high detection accuracy and message capacity, while preserving generative quality.<br>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3">Experiments</h2>
+            <p>
+              We evaluate our methods across a wide range of distortion scenarios, including signal, compression, regeneration, and cropping attacks.
+            </p>
+          </div>
+          <div id="results-carousel" class="carousel results-carousel" style="margin-top: 0rem; margin-bottom: 1rem;">
+            <div class="item has-text-centered">
+              <img src="static/images/tab_verification.png" alt="Detection Performance, Verification Task" 
+              style="max-height: 600px; width: auto; margin-bottom: 0.5rem;" />
+              <h2 class="subtitle is-6">Detection Performance – Verification Task</h2>
+            </div>
+            <div class="item has-text-centered">
+              <img src="static/images/tab_identification.png" alt="Detection Performance, Identification Task" 
+              style="max-height: 600px; width: auto; margin-bottom: 0.5rem;" />
+              <h2 class="subtitle is-6">Detection Performance – Identification Task</h2>
+            </div>
+            <div class="item has-text-centered">
+              <img src="static/images/fig_concept-2.png" alt="Generative Quality, Visual Comparison" 
+              style="max-height: 600px; width: auto; margin-bottom: 0.5rem;" />
+              <h2 class="subtitle is-6">Generative Quality – Visual Comparison</h2>
+            </div>
+            <div class="item has-text-centered">
+              <img src="static/images/tab_generative_quality.png" alt="Generative Quality, Quantitative Comparison" 
+              style="max-height: 600px; width: auto; margin-bottom: 0.5rem;" />
+              <h2 class="subtitle is-6">Generative Quality – Quantitative Comparison</h2>
+            </div>
+            <div class="item has-text-centered">
+              <img src="static/images/tab_ablation_detection_scope.png" alt="Ablation Study, Impact of SFW on Detection Performance" 
+              style="max-height: 600px; width: auto; margin-bottom: 0.5rem;" />
+              <h2 class="subtitle is-6">Ablation Study – Impact of SFW on Detection Performance</h2>
+            </div>
+            <div class="item has-text-centered">
+              <img src="static/images/fig_ablation-crop.png" alt="Ablation Study, Robustness to Cropping Attacks" 
+              style="max-height: 600px; width: auto; margin-bottom: 0.5rem;" />
+              <h2 class="subtitle is-6">Ablation Study – Robustness to Cropping Attacks</h2>
+            </div>
+            <div class="item has-text-centered">
+              <img src="static/images/fig_ablation-capacity.png" alt="Ablation Study, Impact of Capacity on Identification" 
+              style="max-height: 600px; width: auto; margin-bottom: 0.5rem;" />
+              <h2 class="subtitle is-6">Ablation Study – Impact of Capacity on Identification</h2>
+            </div>
+          </div>
+          <div class="content">
+            <ol>
+              <li>
+                <strong>Detection Performance</strong><br>
+                Our methods (HSTR and HSQR) consistently outperform prior techniques in both verification and identification tasks, demonstrating enhanced detection robustness against various attack types.
+              </li>
+              <li>
+                <strong>Generative Quality</strong><br>
+                Unlike high-energy methods like RingID, which introduce visible artifacts, our approach maintains high image fidelity thanks to frequency integrity preservation.
+              </li>
+              <li>
+                <strong>Ablation Study</strong>
+                <ol type="a" style="margin-top: 0.25rem;">
+                  <li>
+                    Without Hermitian symmetry, detection performance drops significantly, confirming the core role of SFW.
+                  </li>
+                  <li>
+                    Our center-aware embedding improves robustness to cropping, maintaining high accuracy under spatial distortions.
+                  </li>
+                  <li>
+                    As capacity increases, most methods begin to degrade, yet HSQR remains consistently accurate and reliable.
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Additional Resources</h2>
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/fig_wm-pipeline.png" alt="Semantic Watermarking Pipeline" 
+            style="max-height: 500px; width: auto; margin: 0 auto; display: block; margin-bottom: 0.5rem;" />
+            <h2 class="subtitle has-text-left" style="max-width: 900px; margin: 0 auto;">
+              <strong>End-to-end pipeline</strong> of semantic watermarking using the merged-in-generation scheme. 
+              Watermarks are embedded in the latent Fourier domain and later detected by analyzing the reconstructed latent query via DDIM inversion.
+            </h2>
+          </div>
+          <div class="item" style=>
+            <img src="static/images/fig_supple-terminology.png" alt="Terminology" 
+            style="max-height: 500px; width: auto; margin: 0 auto; display: block; margin-bottom: 0.5rem;" />
+            <h2 class="subtitle has-text-left" style="max-width: 700px; margin: 0 auto;">
+              Taxonomy of watermarking methods categorized by <strong>message type</strong> (bitstream vs. pattern), 
+              <strong>embedding strategy</strong> (post-hoc vs. in-generation), 
+              and <strong>method family</strong> (classical vs. deep learning vs semantic watermarking).
+              Semantic methods are further classified by their watermark patterns into <em>Gaussian-based</em> and <em>structured encodings</em>.
+            </h2>
+          </div>
+          <div class="item" style=>
+            <img src="static/images/tab_processing_time.png" alt="Processing Time" 
+            style="max-height: 500px; width: auto; margin: 0 auto; display: block; margin-bottom: 0.5rem;" />
+            <h2 class="subtitle has-text-left" style="max-width: 700px; margin: 0 auto;">
+              <strong>Processing time</strong> and detection performance of different watermarking methods. 
+              Merged-in-generation schemes require no additional time during generation, while the post-hoc based semantic method Zodiac incurs excessive processing time per image (7.36 m/img).
+            </h2>
+          </div>
+          <div class="item" style=>
+            <img src="static/images/tab_normality.png" alt="Normality Assessment" 
+            style="max-height: 500px; width: auto; margin: 0 auto; display: block; margin-bottom: 0.5rem;" />
+            <h2 class="subtitle has-text-left" style="max-width: 700px; margin: 0 auto;">
+              <strong>Normality assessment</strong> of latent distributions. 
+              By preserving Gaussianity through SFW, our method maintains the statistical structure of the latent space, enabling HSTR to achieve better generative quality than Tree-Ring despite using the same pattern structure.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-small">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered" style="margin-top: 0rem;">More Qualitative Results</h2>
+      <div class="container"></div>
+        <div class="has-text-centered">
+          <img src="static/images/fig_qualitative.png" alt="More Qualitative Results"
+          style="max-width: 80%;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>To Be Updated Soon.</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
