@@ -10,7 +10,7 @@
 INMC,&nbsp;  -->
 Seoul National University, South Korea
 
-[![Project Page](https://img.shields.io/badge/Project-Page-blue)]() &nbsp; 
+[![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://thomas11809.github.io/SFWMark/) &nbsp; 
 <!-- [![arXiv](https://img.shields.io/badge/arXiv-0000.0000-b31b1b.svg)]() -->
 
 <p align="center"> <img src="docs/static/images/SFW_logo.png" width="300px"> </p>
