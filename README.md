@@ -54,7 +54,28 @@ bash install.sh
 If you encounter any _version compatibility issues_ during installation, please refer to `requirements-lock.txt` in the repository.  
 It contains the full output of `pip freeze` with all dependencies included.
 
-<!-- ## ⚡ Quick Start -->
+## ⚡ Quick Start
+We provide a script for **fast watermark embedding and detection** to simplify the usage.  
+It evaluates both:  
+- The **CLIP score** of generated images, and
+- The performance of watermark **verification and identification**
+```bash
+# Example usage
+python quick_start.py \
+  --prompt "A cozy cabin in snowy mountains" \
+  --wm_type HSQR \
+  --attacks "JPEG" "Diffusion" "CC" "RC"
+```
+The detection output includes the **L1 distance**, which indicates watermark presence.  
+Our methods (*HSTR* and *HSQR*) show a larger distance gap between clean and watermarked images compared to the baselines — indicating a more **robust** and **secure** design for detection.
+
+Input arguments:  
+- `--prompt`: Text prompt used for image generation.
+- `--wm_type`: Select the watermarking method. Supports two baselines and two proposed methods. See the [supporting methods](https://github.com/thomas11809/SFWMark?tab=readme-ov-file#-baselines) for details.
+- `--attacks`: Choose from the following perturbations to apply before detection: 
+`"Brightness" "Contrast" "JPEG" "Blur" "Noise" "BM3D" "VAE-B" "VAE-C" "Diffusion" "CC" "RC"`
+- `--output_dir`: Directory to save output images.
+- `--threshold`: Manually set a classification threshold for watermark detection.
 
 ## 🔍 Methods
 
@@ -139,9 +160,9 @@ You can also try other semantic watermarking techniques compatible with this pip
 <p align="left"><img src="docs/static/images/fig_concept-2.png" width="1000"></p>
 
 ## ✅ To Be Done
-⬜️ Provide a **Quick Start** script for fast watermark embedding and detection.  
+✅ Provide a **Quick Start** script for fast watermark embedding and detection.  
 ⬜️ Add [Usage] support for *Zodiac*, the post-hoc semantic watermarking baseline used in the paper.  
-⬜️ Add [Usage] support for bitstream-based methods used as baselines in the paper (DwtDct, DwtDctSvd, RivaGAN, Stable Signature, Gaussian Shading).  
+⬜️ Add [Usage] support for bitstream-based methods used as baselines in the paper (*DwtDct, DwtDctSvd, RivaGAN, Stable Signature, Gaussian Shading*).  
 
 ## 📄 License & Contact
 This repository is licensed under the **CC BY-NC 4.0** license.  

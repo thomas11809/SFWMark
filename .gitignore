@@ -7,12 +7,14 @@
 docs/static/png
 src/text_dataset/
 outputs/
+quick_outputs/
 
 # Python files
 z/
 # l1.py
 # iccv2025_main.py
 # test.py
+src/quick_start.py
 
 # etc
 # requirements.txt
