@@ -164,6 +164,18 @@ You can also try other semantic watermarking techniques compatible with this pip
 ⬜️ Add [Usage] support for *Zodiac*, the post-hoc semantic watermarking baseline used in the paper.  
 ⬜️ Add [Usage] support for bitstream-based methods used as baselines in the paper (*DwtDct, DwtDctSvd, RivaGAN, Stable Signature, Gaussian Shading*).  
 
+## 📝 Citation
+If you find this work useful, please consider citing our paper:
+```
+@inproceedings{lee2025semantic,
+  title={Semantic Watermarking Reinvented: Enhancing Robustness and Generation Quality with Fourier Integrity},
+  author={Lee, Sung Ju and Cho, Nam Ik},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={18759--18769},
+  year={2025}
+}
+```
+
 ## 📄 License & Contact
 This repository is licensed under the **CC BY-NC 4.0** license.  
 You are free to use this code for research and non-commercial purposes only.  
